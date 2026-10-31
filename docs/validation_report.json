@@ -1,0 +1,110 @@
+{
+  "package": "inno_medical_claims_guard",
+  "trl_claim": 4,
+  "data": "synthetic only",
+  "all_pass": true,
+  "runs": [
+    {
+      "seed": 0,
+      "metrics": {
+        "auc": 0.9129,
+        "precision_at_5pct": 0.835,
+        "explained_share": 1.0
+      },
+      "criteria": [
+        {
+          "metric": "auc",
+          "op": ">=",
+          "threshold": 0.9,
+          "value": 0.9129,
+          "pass": true,
+          "description": "ROC AUC of anomaly score"
+        },
+        {
+          "metric": "precision_at_5pct",
+          "op": ">=",
+          "threshold": 0.6,
+          "value": 0.835,
+          "pass": true,
+          "description": "precision among top 5% scored claims"
+        },
+        {
+          "metric": "explained_share",
+          "op": ">=",
+          "threshold": 1.0,
+          "value": 1.0,
+          "pass": true,
+          "description": "flagged claims that carry at least one reason"
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "metrics": {
+        "auc": 0.9048,
+        "precision_at_5pct": 0.82,
+        "explained_share": 1.0
+      },
+      "criteria": [
+        {
+          "metric": "auc",
+          "op": ">=",
+          "threshold": 0.9,
+          "value": 0.9048,
+          "pass": true,
+          "description": "ROC AUC of anomaly score"
+        },
+        {
+          "metric": "precision_at_5pct",
+          "op": ">=",
+          "threshold": 0.6,
+          "value": 0.82,
+          "pass": true,
+          "description": "precision among top 5% scored claims"
+        },
+        {
+          "metric": "explained_share",
+          "op": ">=",
+          "threshold": 1.0,
+          "value": 1.0,
+          "pass": true,
+          "description": "flagged claims that carry at least one reason"
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "metrics": {
+        "auc": 0.9155,
+        "precision_at_5pct": 0.84,
+        "explained_share": 1.0
+      },
+      "criteria": [
+        {
+          "metric": "auc",
+          "op": ">=",
+          "threshold": 0.9,
+          "value": 0.9155,
+          "pass": true,
+          "description": "ROC AUC of anomaly score"
+        },
+        {
+          "metric": "precision_at_5pct",
+          "op": ">=",
+          "threshold": 0.6,
+          "value": 0.84,
+          "pass": true,
+          "description": "precision among top 5% scored claims"
+        },
+        {
+          "metric": "explained_share",
+          "op": ">=",
+          "threshold": 1.0,
+          "value": 1.0,
+          "pass": true,
+          "description": "flagged claims that carry at least one reason"
+        }
+      ]
+    }
+  ]
+}
